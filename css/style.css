@@ -3,3 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.top-section{
+   height: calc(100vh - 100px);
+   background-color: aquamarine;
+   display: flex;
+}
+
+.bottom-section{
+   height: 100px;
+   background-color: rgb(55, 55, 55);
+}
+
+.sidebar{
+    width: 75px;
+    background-color: rgb(33, 32, 32);
+}
+
+.main-content{
+    width: calc(100vw - 75px);
+    background-color: blue;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 75px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.312);
+    width: calc(100vw - 75px);
+    text-align: right;
+}
+
+/* media query */
+@media screen and (min-width: 768px) {
+    .sidebar{
+        width: 200px;
+    }
+
+    .main-content{
+        width: calc(100vw - 200px);
+    }
+
+    header{
+        left: 200px;
+        width: calc(100vw - 200px);
+    }
+}
